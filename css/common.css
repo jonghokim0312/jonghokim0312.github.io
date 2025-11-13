@@ -1,0 +1,585 @@
+@charset "UTF-8";
+@import url("common_pc.css");
+@media only all and (max-width: 1023px) {
+  html {
+    font-size: 1.5rem;
+    /* 기본베이스 폰트사이즈 24px */
+    line-height: 1.5rem;
+    /* 기본베이스 line-height 사이즈 24px */
+  }
+  body {
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .span-br {
+    display: inline;
+  }
+  .span-mobile-br {
+    display: block;
+  }
+  .only-pc {
+    display: none;
+  }
+  .only-mobile {
+    display: block;
+  }
+  .wrapper {
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  .wrapper h1 {
+    top: 3.5rem;
+    left: 4.1667rem;
+  }
+  .wrapper h1 > img {
+    display: block;
+    width: 15.5rem;
+  }
+  #section1 {
+    height: auto;
+    padding: 10.7083rem 2.5rem 0 2.5rem;
+  }
+  .bg-line-top,
+  .bg-line-bottom {
+    height: 1.25rem;
+  }
+  .bg-line-left,
+  .bg-line-right {
+    width: 1.25rem;
+  }
+  .bg-line-top {
+    top: 1.25rem;
+    left: 1.25rem;
+  }
+  .bg-line-bottom {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+  .bg-line-left {
+    bottom: 1.25rem;
+    left: 1.25rem;
+  }
+  .bg-line-right {
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+  #section1.active .bg-line-top {
+    width: calc(100% - 3.75rem);
+  }
+  #section1.active .bg-line-right {
+    height: calc(100% - 3.75rem);
+  }
+  #section1.active .bg-line-bottom {
+    width: calc(100% - 3.75rem);
+  }
+  #section1.active .bg-line-left {
+    height: calc(100% - 3.75rem);
+  }
+  .photo-candidate {
+    position: relative;
+    right: 0;
+    display: block;
+    width: 100%;
+    /* max-width: 32.5rem; */
+    height: auto;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  .photo-candidate img {
+    display: block;
+    width: 100%;
+  }
+  /*
+    .photo-candidate dl {
+        bottom: 2.7083rem;
+        right: 3.5417rem;
+    }
+	*/
+
+  .photo-candidate dl {
+    bottom: 6.5rem;
+    right: 3.5417rem;
+  }
+
+  .photo-candidate dl dt {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .photo-candidate dl dd {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .photo-candidate dl dd > strong {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  #section1 .contents-wrapper,
+  .contents-wrapper {
+    max-width: 100%;
+    padding: 0 1.6667rem;
+    margin: 0 auto;
+  }
+  .candidate-information .slogan-wrapper1 {
+    margin-bottom: 2.8333rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-shadow: 0.0833rem 0.1667rem 0.5833rem rgba(0, 0, 0, 0.09);
+    word-break: keep-all;
+  }
+  .candidate-information .slogan-wrapper1 div {
+    height: 2.5rem;
+  }
+  .candidate-information .slogan-wrapper1 div p {
+    top: 2.5rem;
+  }
+  .candidate-information dl {
+    margin-bottom: 0.5417rem;
+  }
+  .candidate-information dl dt {
+    height: 2.8333rem;
+    margin-bottom: 1.4583rem;
+  }
+  .candidate-information dl dt p {
+    position: relative;
+    top: 2.8333rem;
+    padding: 0.0833rem 1.6667rem 0 1.6667rem;
+    height: 2.8333rem;
+    border-radius: 2.8333rem;
+    border: 0.1667rem solid #fff;
+    font-size: 1.3333rem;
+  }
+  .candidate-information dl dd {
+    height: 1.75rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .candidate-information ul {
+    font-size: 1.1667rem;
+    line-height: 2.1667rem;
+  }
+  .candidate-information ul > li {
+    height: 2.1667rem;
+  }
+  .candidate-information ul > li > p {
+    top: 2.1667rem;
+  }
+  #section2 {
+    padding: 5.375rem 0 5.75rem 0;
+  }
+  .promise-wrapper > dl {
+    margin-bottom: 2.625rem;
+  }
+  .promise-wrapper > dl > dt {
+    top: 2.083rem;
+    margin-bottom: 1.6667rem;
+    font-size: 1.3333rem;
+    line-height: 2rem;
+  }
+  .promise-wrapper > dl > dd {
+    top: 2.083rem;
+    font-size: 2.1667rem;
+    line-height: 3rem;
+  }
+  .promise-wrapper ol {
+    max-width: 100%;
+  }
+  .promise-wrapper ol li {
+    top: 2.083rem;
+    padding: 1.4583rem 0 1.4583rem 3.2083rem;
+    font-size: 1.3333rem;
+    line-height: 2.1667rem;
+    border-bottom: 0.25rem solid #f1f1f1;
+  }
+  .promise-wrapper ol li .number {
+    top: 1.6667rem;
+    left: 0.6667rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1rem;
+  }
+  .promise-wrapper ol li strong {
+    display: block;
+  }
+  .odd,
+  .even {
+    display: block;
+    min-height: auto;
+    padding: 9.2917rem 0 11.4583rem 0;
+  }
+  .title-number {
+    position: absolute;
+    top: 3.5417rem;
+    font-size: 5rem;
+    line-height: 5.2083rem;
+    color: rgba(255, 255, 255, 0.13);
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+  .odd .title-number {
+    left: -0.9167rem !important;
+  }
+  .even .title-number {
+    right: initial !important;
+    left: -0.9167rem !important;
+  }
+  .odd img,
+  .even img {
+    position: static;
+    width: calc(100% - 3.3333rem);
+    max-width: 29.1667rem;
+    height: initial;
+    margin: 2.4167rem auto 0 auto !important;
+  }
+  /* #section8 {
+        padding-bottom: 20rem
+    }
+
+    #section8.even img {
+        position: absolute;
+        top: initial;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: initial;
+        margin: 0;
+    } */
+  .odd .contents-wrapper {
+    /* padding-top: 1.6667rem; */
+    padding-right: 1.6667rem;
+  }
+  .even .contents-wrapper {
+    /* padding-top: 1.6667rem; */
+    padding-left: 1.6667rem;
+  }
+  .odd .contents-wrapper dl,
+  .even .contents-wrapper dl {
+    margin-bottom: 4.0833rem;
+  }
+  .odd .contents-wrapper dl dt,
+  .even .contents-wrapper dl dt {
+    margin-bottom: 1.3333rem;
+    font-size: 2.6667rem;
+    line-height: 3.5rem;
+  }
+  .odd .contents-wrapper dl dt > strong,
+  .even .contents-wrapper dl dt > strong {
+    margin-bottom: 0.2083rem;
+  }
+  .odd .contents-wrapper dl dd,
+  .even .contents-wrapper dl dd {
+    font-size: 1.8333rem;
+    line-height: 2.5rem;
+  }
+  .odd .contents-wrapper ul,
+  .even .contents-wrapper ul {
+    font-size: 1.3333rem;
+    line-height: 2.3333rem;
+  }
+  .odd .contents-wrapper ul > li {
+    padding-left: 1.1667rem;
+  }
+  .even .contents-wrapper ul > li {
+    padding-left: 1.1667rem;
+  }
+  .odd .contents-wrapper ul > li:before,
+  .even .contents-wrapper ul > li:before {
+    top: 0.9583rem;
+    left: 0;
+    width: 0.4167rem;
+    height: 0.4167rem;
+  }
+  .odd .contents-wrapper ul > li + li {
+    margin-top: 2.4167rem;
+  }
+  .even .contents-wrapper ul > li + li {
+    margin-top: 2.4167rem;
+  }
+  #section9 {
+    padding: 5.375rem 0 5.75rem 0;
+  }
+  .gretting-wrapper {
+    padding-left: 0;
+  }
+  .gretting-wrapper .gretting-slogan {
+    position: static;
+    width: auto;
+  }
+  .gretting-wrapper .gretting-slogan > div {
+    padding: 3.625rem 0 1.875rem 0;
+    margin-bottom: 4.0833rem;
+    font-size: 2.25rem;
+    line-height: 3.875rem;
+  }
+  .gretting-wrapper .gretting-slogan > div .top,
+  .gretting-wrapper .gretting-slogan > div .bottom {
+    width: 1.875rem;
+    height: 1.6875rem;
+    background-size: 1.875rem 1.6875rem;
+  }
+  .gretting-wrapper .gretting-slogan > div .top {
+    left: 0.25rem;
+  }
+  .gretting-wrapper .gretting-slogan > div .bottom {
+    left: initial;
+    right: 0;
+  }
+  .gretting-wrapper .gretting-slogan dl {
+    font-size: 1.3333rem;
+    line-height: 2.125rem;
+    text-align: right;
+  }
+  .gretting-wrapper .gretting-slogan dl > dd > strong {
+    font-size: 1.75rem;
+  }
+  .gretting-area {
+    padding-top: 3.5417rem;
+  }
+  .gretting-area h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .gretting-area p {
+    font-size: 1.125rem;
+    line-height: 2.375rem;
+  }
+  .gretting-area div {
+    margin-bottom: 2.5rem;
+  }
+  #section10 {
+    padding: 5.375rem 0 5.75rem 0;
+  }
+  .profile-wrapper {
+    display: block;
+  }
+  .profile-wrapper h2 {
+    margin-bottom: 3.4167rem;
+    font-size: 2.1667rem;
+    line-height: 3.1667rem;
+  }
+  .profile-area {
+    width: 100%;
+  }
+  .profile-box {
+    padding-left: 0;
+    margin-bottom: 2.5rem;
+  }
+  .profile-box > h3 {
+    position: static;
+    margin-bottom: 0.0833rem;
+    font-size: 1.3333rem;
+    line-height: 2.3333rem;
+  }
+  .profile-box > p,
+  .profile-box > dl {
+    font-size: 1.3333rem;
+    line-height: 2.3333rem;
+  }
+  .profile-box > dl > dd > ul > li {
+    padding-left: 1.25rem;
+  }
+  .profile-box > dl > dd > ul > li:before {
+    top: 1.0833rem;
+    left: 0.5417rem;
+    width: 0.1667rem;
+    height: 0.1667rem;
+    border-radius: 100%;
+  }
+  .profile-box > dl + dl {
+    margin-top: 2.3333rem;
+  }
+  #section11 {
+    height: 14.8333rem;
+  }
+  #section11 > img {
+    top: 0;
+    left: 0;
+  }
+  #section11 > img.pc {
+    display: none;
+  }
+  #section11 > img.mobile {
+    display: block;
+    width: 100%;
+  }
+  #section11 p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  footer {
+    height: 8.5833rem;
+  }
+  footer > p {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+  .btn-top-go {
+    position: fixed;
+    bottom: -1.5625rem;
+    right: 1.6667rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 2.0833rem;
+    border-radius: 3.125rem;
+  }
+  .btn-top-go.active {
+    bottom: 3.125rem;
+  }
+  .btn-top-go:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0.125rem 0.125rem 0.3125rem;
+  }
+  .btn-top-go:hover:before {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .btn-top-go .icon {
+    width: 3.125rem;
+    height: 3.125rem;
+    z-index: 0.4167rem;
+  }
+  .btn-top-go .icon > span {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .btn-top-go .icon > span > img {
+    width: 0.75rem;
+  }
+  .btn-top-go:hover .icon > span {
+    top: -3.125rem;
+  }
+
+  .promise-wrapper ul {
+    display: block;
+    margin: 2.708rem auto 0 auto;
+    gap: 1.333rem;
+    width: 100%;
+  }
+
+  .promise-wrapper ul > li {
+    display: block;
+    width: 100%;
+  }
+  .promise-wrapper ul > li + li {
+    margin-top: 1rem;
+  }
+
+  .promise-wrapper ul > li > a {
+    width: 100%;
+    height: 4.792rem;
+    font-size: 1.375rem;
+    border-bottom: 0.208rem solid #f1f1f1;
+  }
+
+  .promise-wrapper ul > li > a:before {
+    right: 1rem;
+    width: 0.583rem;
+    height: 0.875rem;
+    margin-top: -0.438rem;
+    background-size: 0.583rem 0.875rem;
+  }
+
+  .promise-wrapper ul > li > a:after {
+    bottom: -0.208rem;
+    height: 0.208rem;
+  }
+
+  .promise-wrapper ul > li > a:hover:before {
+    right: 0.625rem;
+  }
+
+  .movie-wrapper {
+    right: 0 !important;
+    bottom: 1.833rem;
+    width: 100%;
+    gap: 0.833rem;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+  }
+
+  .movie-wrapper > a {
+    height: 3.75rem;
+    padding: 0 2.167rem 0 1.458rem;
+    border-radius: 3.75rem;
+    font-size: 1.125rem;
+  }
+
+  .movie-wrapper > a:before {
+    right: 0.958rem;
+    width: 0.5rem;
+    height: 0.583rem;
+    margin-top: -0.292rem;
+    background-size: 0.5rem 0.583rem;
+  }
+
+  .movie-wrapper > a:hover {
+    box-shadow: 0.167rem 0.167rem 0.625rem 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .movie-wrapper > a:hover:before {
+    right: 0.833rem;
+  }
+}
+
+@media only all and (max-width: 767px) {
+  html {
+    font-size: 1.25rem;
+    /* 기본베이스 폰트사이즈 18px */
+    line-height: 1.25rem;
+    /* 기본베이스 line-height 사이즈 18px */
+  }
+}
+
+@media only all and (max-width: 600px) {
+  html {
+    font-size: 1rem;
+    /* 기본베이스 폰트사이즈 16px */
+    line-height: 1rem;
+    /* 기본베이스 line-height 사이즈 16px */
+  }
+}
+
+@media only all and (max-width: 475px) {
+  html {
+    font-size: 0.75rem;
+    /* 기본베이스 폰트사이즈 13px */
+    line-height: 0.75rem;
+    /* 기본베이스 line-height 사이즈 13px */
+    /* 기본베이스 line-height 사이즈 14px */
+  }
+  .icon-window {
+    width: 12px;
+    height: 12px;
+    background-size: 12px 12px;
+  }
+}
+
+@media only all and (max-width: 359px) {
+  html {
+    font-size: 0.75rem;
+    /* 기본베이스 폰트사이즈 12px
+		line-height: 0.75rem;
+		/* 기본베이스 line-height 사이즈 12px */
+  }
+  #section11 p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .photo-candidate dl dt {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .photo-candidate dl dd {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .photo-candidate dl dd > strong {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
