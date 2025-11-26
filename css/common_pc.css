@@ -143,6 +143,13 @@ body {
   right: 45px;
 }
 
+res_img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 #section1.active .bg-line-top {
   width: calc(100% - 120px);
   transition-delay: 0.15s;
